@@ -1107,7 +1107,7 @@ sysctl_all(int *oid, int len)
 		memcpy(name1+2, oid, len * sizeof(int));
 		l1 += len;
 	} else {
-		name1[2] = 1;
+		name1[2] = 0;
 		l1++;
 	}
 	for (;;) {
